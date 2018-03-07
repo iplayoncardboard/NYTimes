@@ -9,7 +9,7 @@ $('#clearAll').on('click',function(){
 $('#runSearch').on("click", function(event) {
     event.preventDefault();
     var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
-    var search = $("#search").val();
+    var search = $("#searchTerm").val();
 
     queryURL += '?' + $.param({
         'api-key': "e597fe8f44504907a3558e207a65c21e",
